@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "BrownSugar";
+  src: url("../fonts/BrownSugar.otf") format("otf");
+}
+
+@font-face {
+  font-family: "BrownSugar-bold";
+  src: url("../fonts/BrownSugar-Bold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Biko";
+  src: url("../fonts/Biko_Regular.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Biko-light";
+  src: url("../fonts/Biko_Light-Restricted.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Biko-bold";
+  src: url("../fonts/Biko_Bold.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Biko-black";
+  src: url("../fonts/Biko_Black.otf") format("otf");
+}
+
+.BrownSugar {
+  font-family: "BrownSugar";
+}
+
+.BrownSugar-bold {
+  font-family: "BrownSugar-bold";
+}
+
+.Biko {
+  font-family: "Biko";
+}
+
+.Biko-light {
+  font-family: "Biko-light";
+}
+
+.Biko-bold {
+  font-family: "Biko-bold";
+}
+
+.Biko-black {
+  font-family: "Biko-black";
+}
+
+#submenu {
+  display: none;
+}

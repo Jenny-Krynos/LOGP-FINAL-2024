@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div
+      id="sidebar"
+      class="hidden absolute h-full w-full bg-[#334C93]/75 z-50"
+    >
+      <div class="bg-[#EFEFEF] w-[68%] h-full flex flex-col">
+        <div class="w-full flex flex-row justify-between p-5">
+          <a href="./home.html"
+            ><img src="../icons/icon_home.svg" alt="" class="w-[53px]"
+          /></a>
+          <button onclick="CloseMenu(document)">
+            <img src="../icons/icon_arrow_left.svg" alt="" class="w-[32px]" />
+          </button>
+        </div>
+        <div
+          class="flex flex-row gap-[9px] justify-center items-center w-auto h-[32px] mx-5 bg-[#D9D9D9] rounded-[15px] shadow-inner shadow-black/50 py-1"
+        >
+          <img src="../icons/icon_search.svg" alt="" class="w-[22px]" />
+          <input
+            type="text"
+            placeholder="Buscar..."
+            class="bg-transparent focus:outline-none"
+          />
+        </div>
+        <div class="w-full mt-[30px]">
+          <ul class="menu">
+            <a href="./home.html"
+              ><li
+                class="flex flex-row justify-start gap-[14px] items-center pl-[27px] py-2 border-y-2 border-[#C3C3C3] hover:bg-[#C3C3C3] cursor-pointer"
+              >
+                <img src="../icons/icon_house.svg" alt="" class="w-10" /> Inicio
+              </li></a
+            >
+            <a href="./about_us.html">
+              <li
+                class="flex flex-row justify-start gap-[14px] items-center pl-[27px] py-2 border-b-2 border-[#C3C3C3] hover:bg-[#C3C3C3] cursor-pointer"
+              >
+                <img src="../icons/icon_about_us.svg" alt="" class="w-10" />
+                Sobre nosotros
+              </li>
+            </a>
+            <li
+              class="sub-option flex flex-col justify-startitems-center py-2 border-b-2 border-[#C3C3C3] hover:bg-[#C3C3C3] cursor-pointer"
+            >
+              <div class="flex flex-row items-center w-full h-full pl-[27px]">
+                <a
+                  href="./products.html"
+                  class="w-3/4 flex flex-row gap-[14px] items-center"
+                >
+                  <img src="../icons/icon_store.svg" alt="" class="w-10" />
+                  Tienda</a
+                >
+                <button
+                  id="arrow-up"
+                  class="w-1/4 h-[34px] flex flex-col justify-center items-center border-l-2 border-[#949494]"
+                  onclick="OpenSubMenu(document)"
+                >
+                  <img
+                    src="../icons/icon_submenu_arrow_down.svg"
+                    alt=""
+                    class="w-[17px]"
+                  />
+                </button>
+                <button
+                  id="arrow-down"
+                  class="hidden w-1/4 h-[34px] flex-col justify-center items-center border-l-2 border-[#949494]"
+                  onclick="CloseSubMenu(document)"
+                >
+                  <img
+                    src="../icons/icon_submenu_arrow_up.svg"
+                    alt=""
+                    class="w-[17px]"
+                  />
+                </button>
+              </div>
+              <ul id="submenu" class="w-full">
+                <li
+                  class="flex flex-row justify-start items-center gap-[14px] w-full h-full pl-[50px] py-2 mt-2 hover:bg-[#949494]"
+                >
+                  <img src="../icons/icon_news.svg" alt="" class="w-10" />
+                  Novedades
+                </li>
+                <li
+                  class="flex flex-row justify-start items-center gap-[14px] w-full h-full pl-[50px] py-2 hover:bg-[#949494]"
+                >
+                  <img src="../icons/icon_discount.svg" alt="" class="w-10" />
+                  Descuento
+                </li>
+              </ul>
+            </li>
+            <a href="./creators.html"
+              ><li
+                class="flex flex-row justify-start gap-[14px] items-center pl-[27px] py-2 border-b-2 border-[#C3C3C3] hover:bg-[#C3C3C3] cursor-pointer"
+              >
+                <img src="../icons/icon_creators.svg" alt="" class="w-[35px]" />
+                Creadores
+              </li></a
+            >
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div
+        class="flex flex-row justify-center items-center px-8 pt-[30px] w-full"
+      >
+        <button class="">
+          <img
+            src="../icons/icon_menu.svg"
+            alt=""
+            onclick="OpenMenu(document)"
+          />
+        </button>
+
+        <button class="ml-[104px] mr-12">
+          <img src="../icons/icon_home.svg" alt="" />
+        </button>
+
+        <div class="flex flex-row gap-6">
+          <button class="">
+            <a href="./products.html"
+              ><img src="../icons/icon_store.svg" alt=""
+            /></a>
+          </button>
+          <button class="">
+            <a href="./sign_in.html"
+              ><img src="../icons/icon_user.svg" alt=""
+            /></a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="flex flex-col justify-center items-center mt-10 gap-8">
+      <h2
+        class="bg-[#B34C93] text-slate-50 rounded-[15px] text-[15px] pt-1 pb-2 px-8"
+      >
+        Una muestra de cariño, hecha a Su Medida.
+      </h2>
+      <div class="swiper w-full h-[211px]">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="../img/banner-central.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/banner-derecha.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../img/banner-izquierda.png" alt="" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col justify-center items-center my-6 gap-7 px-[27px] text-center"
+    >
+      <h2
+        class="bg-[#05A3C6] text-slate-50 px-7 rounded-full pb-[11px] pt-[6px] shadow-md shadow-gray-400"
+      >
+        CAT&rsquo;S FURNITURE, El Salvador.
+      </h2>
+
+      <p
+        class="min-w-[376px] max-w-[450px] w-full bg-[#E6E6E6] text-[14px] text-[#334C93] px-2 py-[8.5px] rounded-[15px] shadow-inner shadow-gray-400"
+      >
+        En Kimberson, cat&rsquo;s furniture, tenemos variedad de rascadores para
+        tu mascota, dejanos mostrarnos algunos de nuestros felices clientes.
+      </p>
+
+      <div
+        class="flex flex-row w-full justify-between items-center gap-[19px] text-center"
+      >
+        <p
+          class="flex items-center w-[175px] h-[83px] px-2 py-4 bg-[#05A3C6] text-slate-50 text-[11px] rounded-[15px] shadow-md shadow-gray-400"
+        >
+          Tenemos rascadores/gimnasios de todos los tamaños, ideal para tu
+          mascota.
+        </p>
+        <p
+          class="flex items-center w-[175px] h-[83px] px-2 py-4 bg-[#05A3C6] text-slate-50 text-[11px] rounded-[15px] shadow-md shadow-gray-400"
+        >
+          Deja que tu mascota se sienta segura y feliz en un espacio designado
+          especificamente para ellos.
+        </p>
+      </div>
+      <div
+        class="flex flex-row w-full justify-between items-center gap-[19px] text-center"
+      >
+        <img
+          src="../img/product-4.jpg"
+          alt=""
+          class="w-[179px] h-[188px] rounded-[15px]"
+        />
+        <p
+          class="flex items-center w-[179px] h-[188px] px-4 bg-[#E6E6E6] text-[#334C93] rounded-[15px] text-[11px] shadow-inner shadow-gray-400"
+        >
+          Nuestros productos ofrecen la calidad y comodidad para que tus
+          mascotas se sientan seguros y comodos. Hechos para crear un espacio
+          unico y confortable para ellos.
+        </p>
+      </div>
+      <h2
+        class="bg-[#B34C93] text-slate-50 text-center text-[15px] p-2 rounded-[15px] shadow-md shadow-gray-400"
+      >
+        Si no sabes como escoger tu gimnasio, ¡mira el siguiente video!
+      </h2>
+      <iframe
+        width="371"
+        height="208"
+        class="rounded-[15px]"
+        src="https://www.youtube.com/embed/I0f-vqTOpwo?si=iOXVAWIIm7yoHcXu"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../javascript/swiper-slider.js"></script>
+    <script src="../javascript/side-menu.js"></script>
+  </body>
+</html>

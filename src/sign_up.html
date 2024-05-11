@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <title>Registrarse</title>
+  </head>
+  <body>
+    <header>
+      <div class="flex flex-row justify-around items-center mt-[30px]">
+        <img src="../icons/icon_home.svg" alt="" class="w-[75px]" />
+        <p class="text-slate-50 bg-[#05A3C6] px-6 py-[5px] rounded-[15px]">
+          Inicio de Sesión
+        </p>
+        <button>
+          <a href="./home.html"
+            ><img src="../icons/icon_exit.svg" alt="" class="w-[35px]"
+          /></a>
+        </button>
+      </div>
+    </header>
+    <div
+      class="flex flex-col w-full justify-center items-center gap-6 px-7 mt-12"
+    >
+      <div
+        class="flex flex-row items-center gap-1 w-full border-b-2 border-black pb-1"
+      >
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Jennifer"
+          class="w-[80%] focus:border-0 active:border-0 mt-1 px-3 py-2 focus:ring-0 focus:outline-none"
+        />
+      </div>
+      <div
+        class="flex flex-row items-center gap-1 w-full border-b-2 border-black pb-1"
+      >
+        <label for="apellido">Apellido:</label>
+        <input
+          type="text"
+          name="apellido"
+          id="apellido"
+          placeholder="Ayala"
+          class="w-[80%] focus:border-0 active:border-0 mt-1 px-3 py-2 focus:ring-0 focus:outline-none"
+        />
+      </div>
+      <div
+        class="flex flex-row items-center gap-1 w-full border-b-2 border-black pb-1"
+      >
+        <label for="telefono">Telefono:</label>
+        <input
+          type="text"
+          name="telefono"
+          id="telefono"
+          placeholder="2222-2222"
+          class="w-[80%] focus:border-0 active:border-0 mt-1 px-3 py-2 focus:ring-0 focus:outline-none"
+        />
+      </div>
+      <div
+        class="flex flex-row items-center gap-1 w-full border-b-2 border-black pb-1"
+      >
+        <label for="direccion">Direccion:</label>
+        <input
+          type="text"
+          name="direccion"
+          id="direccion"
+          placeholder="Av. La Paz, Calle El Progreso"
+          class="w-[80%] focus:border-0 active:border-0 mt-1 px-3 py-2 focus:ring-0 focus:outline-none"
+        />
+      </div>
+      <div
+        class="flex flex-row items-center gap-1 w-full border-b-2 border-black pb-1"
+      >
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="ejemplo@correo.com"
+          class="w-[80%] focus:border-0 active:border-0 mt-1 px-3 py-2 focus:ring-0 focus:outline-none"
+        />
+      </div>
+      <div
+        class="flex flex-row items-center gap-1 w-full border-b-2 border-black pb-1"
+      >
+        <label for="password">Contraseña:</label>
+        <input
+          type="text"
+          name="password"
+          id="password"
+          class="w-[80%] focus:border-0 active:border-0 mt-1 px-3 py-2 focus:ring-0 focus:outline-none"
+        />
+      </div>
+      <div
+        class="flex flex-row items-center gap-1 w-full border-b-2 border-black pb-1"
+      >
+        <label for="confirmed-password">Confirmar Contraseña:</label>
+        <input
+          type="text"
+          name="confirmed-password"
+          id="confirmed-password"
+          class="w-[80%] focus:border-0 active:border-0 mt-1 px-3 py-2 focus:ring-0 focus:outline-none"
+        />
+      </div>
+      <button
+        class="text-[24px] text-slate-50 bg-[#B34C93] hover:bg-[#8d3571] text-center px-11 py-2 rounded-[15px] mt-11"
+      >
+        <a href="./success.html">Registrarse</a>
+      </button>
+    </div>
+  </body>
+</html>
